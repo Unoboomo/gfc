@@ -54,9 +54,19 @@ GFC_Vector4D gfc_vector4d(float x, float y, float z, float w)
   return vec;
 }
 
+GFC_Vector2D gfc_vector2d_added(GFC_Vector2D a, GFC_Vector2D b)
+{
+    return gfc_vector2d(a.x + b.x, a.y + b.y);
+}
+
 GFC_Vector3D gfc_vector3d_added(GFC_Vector3D a, GFC_Vector3D b)
 {
   return gfc_vector3d(a.x + b.x, a.y + b.y, a.z + b.z);
+}
+
+GFC_Vector2D gfc_vector2d_subbed(GFC_Vector2D a, GFC_Vector2D b)
+{
+    return gfc_vector2d(a.x - b.x, a.y - b.y);
 }
 
 GFC_Vector3D gfc_vector3d_subbed(GFC_Vector3D a, GFC_Vector3D b)

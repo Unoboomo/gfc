@@ -315,6 +315,22 @@ GFC_Vector3D gfc_vector3d_subbed(GFC_Vector3D a, GFC_Vector3D b);
 GFC_Vector3D gfc_vector3d_added(GFC_Vector3D a, GFC_Vector3D b);
 
 /**
+ * @brief function version of the subtract, returns the new gfc_vector
+ * @param a GFC_Vector2D input
+ * @param b GFC_Vector2D input
+ * @return the resulting gfc_vector
+ */
+GFC_Vector2D gfc_vector2d_subbed(GFC_Vector2D a, GFC_Vector2D b);
+
+/**
+ * @brief function version of the add, returns the new gfc_vector
+ * @param a GFC_Vector2D input
+ * @param b GFC_Vector2D input
+ * @return the resulting gfc_vector
+ */
+GFC_Vector2D gfc_vector2d_added(GFC_Vector2D a, GFC_Vector2D b);
+
+/**
  * @brief Macro to scale a gfc_vector by a scalar value
  * varient ending in p takes a pointer to GFC_Vector3D instead.
  * Varients ending with 2D only operate on the x an y components of gfc_vectors
