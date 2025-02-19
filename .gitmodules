@@ -1,0 +1,6 @@
+[submodule "simple_logger"]
+	path = simple_logger
+	url = git@github.com:Unoboomo/simple_logger.git
+[submodule "simple_json"]
+	path = simple_json
+	url = git@github.com:Unoboomo/simple_json.git
